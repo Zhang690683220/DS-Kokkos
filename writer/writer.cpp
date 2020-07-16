@@ -120,7 +120,8 @@ int main( int argc, char* argv[] )
 
   
   MPI_Barrier(gcomm);
-  MPI_Finalize();
+  dspaces_finalize ();
+  //MPI_Finalize();
 
   return 0;
 
